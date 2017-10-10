@@ -22,6 +22,7 @@ const totalBatteries = batteryBatches.reduce(function(acc, battery) {
 }, 0)
 
 const wordCountMap = monologueLines.reduce(function(acc, sentence) {
-  acc[sentence.split(" ").length] = (acc[sentence.split(" ").length] || 0) + 1;
-  return acc;
+  debugger;
+  acc[sentence.split(" ").length] = (acc[sentence.split(" ").length] || 0) + 1; //updating an object that looks like this {7: 2, 9:1} which is the word count and count of sentences with that word count
+  return acc; //returns object at the end 
 }, {})
